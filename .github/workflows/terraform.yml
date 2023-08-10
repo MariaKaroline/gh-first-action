@@ -27,7 +27,7 @@ jobs:
   
     - name: Azure Login
       run: |
-        az login --service-principal --username "689c2c8a-ea3e-453b-b731-4a2fd9a5f24d" --password "RsR8Q~rLD_~7lstCVMg1L-LLaOBkf4xjFCl8MbeJ" --tenant "9d1a09cf-4dcb-4bba-890f-71cdc69a6498"
+        az login --service-principal --username "84a6d977-b769-4517-a54e-bcc5ec20cd5b" --password "RsR8Q~rLD_~7lstCVMg1L-LLaOBkf4xjFCl8MbeJ" --tenant "9d1a09cf-4dcb-4bba-890f-71cdc69a6498"
     
 #     - name: Configure Azure credentials
 #       run: |
