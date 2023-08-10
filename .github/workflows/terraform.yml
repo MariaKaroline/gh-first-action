@@ -33,28 +33,6 @@ jobs:
         echo "ARM_SUBSCRIPTION_ID=${{ secrets.AZURE_SUBSCRIPTION_ID }}" >> $GITHUB_ENV
         echo "ARM_TENANT_ID=${{ secrets.AZURE_TENANT_ID }}" >> $GITHUB_ENV
   
-
-Para fazer o login no Azure via GitHub Actions usando uma Service Principal, você pode usar o Azure CLI para autenticar a Service Principal e obter um token de acesso. Esse token de acesso pode então ser usado nas etapas subsequentes para interagir com recursos do Azure.
-
-Aqui está um exemplo de como fazer o login no Azure via GitHub Actions:
-
-yaml
-Copy code
-name: Azure Login
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  azure_login:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
     - name: Set up Azure CLI
       uses: azure/setup-azure-cli@v1
 
